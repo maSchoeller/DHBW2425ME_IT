@@ -21,5 +21,5 @@ https://github.com/maSchoeller/DHBW2425ME_IT
         - Sub
         - Mul
         - Div
-    - Danach soll wie gehabt die Eingabe der beiden Zahlen A und B abgefragt werden. Auch mit der Überprüfung ob die Eingabe Valide ist.
+    - Danach soll wie gehabt die Eingabe der beiden Zahlen A und B abgefragt werden.
     - Außerdem soll sich das Skript nach erfolgreicher Berechnung nicht beenden sondern von Vorne beginnen solange bis der Bediener bei den Rechnenoperationen 'exit' eingibt. Sobald diese Zeichenkette eingegeben wurde soll das Skript sich sofort beenden.
