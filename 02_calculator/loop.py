@@ -1,9 +1,9 @@
-loopSize = int(input("Bitte geben Sie die Anzahl der Wiederholungen ein: "))
-liste = range(loopSize)
-print(liste)
+# loopSize = int(input("Bitte geben Sie die Anzahl der Wiederholungen ein: "))
+# liste = range(loopSize)
+# print(liste)
 # for i in liste:
 #     print("Hallo Welt!" + str(i))
-
-while loopSize >= 0:
+loopSize = 0
+while True:
     print("Hallo Welt!" + str(loopSize))
     loopSize -= 1

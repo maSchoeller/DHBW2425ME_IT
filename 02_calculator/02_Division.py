@@ -1,21 +1,19 @@
-# 01_Addition.py
 
-def get_number(prompt):
-    while True:
-        try:
-            return float(input(prompt))
-        except ValueError:
-            print("Fehler: Bitte eine gültige Zahl eingeben.")
+print("Gib eine Zahl ein:")
+number = int(input())
 
-def main():
-    print("Bitte geben Sie die Zahl A ein:")
-    a = get_number("A: ")
+print("Gib eine zweite Zahl ein:" )
+number1 = int(input())
+
+while number1 == 0 :
+    print("Bitte Überprüfe die Eingabe")
+    number1 = int(input("Bitte Zahl zwei erneut eingeben:"))
     
-    print("Bitte geben Sie die Zahl B ein:")
-    b = get_number("B: ")
-    
-    result = a + b
-    print(f"Das Ergebnis der Addition von {a} und {b} ist: {result}")
+result = number/number1
 
-if __name__ == "__main__":
-    main()
+print (result)
+
+Beenden=input("Zum Beenden Enter drücken")
+
+print(Beenden)
+
