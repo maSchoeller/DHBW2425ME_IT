@@ -27,9 +27,13 @@ def shoot_on_board(l_grid):
     y = randint(0,9)
     return x,y
 
+def check_end_game(l_grid : list[list[str]]):
+    
+    return False
+
 render_grid(grid)
 
-while True:
+while check_end_game(grid):
     x,y = shoot_on_board(grid)
     if grid[y][x] == schiff:
         grid[y][x] = schiff_getroffen
