@@ -3,8 +3,6 @@ import random;
 grid = []
 ships =[3,3,5,2,1,5,4,2]
 
-
-
 def render_grid(_grid):
     for _row in _grid:
         print(_row)
