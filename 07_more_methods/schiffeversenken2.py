@@ -22,24 +22,32 @@ def render_grid(l_grid):
         for field in row:
             print(field,end="")
         print()
+
 def shoot_on_board(l_grid):
-    x = randint(0,9)
     y = randint(0,9)
+    x = randint(0,9)
+    while l_grid[y][x] == schiff_getroffen or l_grid[y][x] == wasser_getroffen:
+        y = randint(0,9)
+        x = randint(0,9)
     return x,y
 
 def check_end_game(l_grid : list[list[str]]):
-    
-    return False
+    for row in l_grid:
+        for field in row:
+            if field == schiff:
+                return False
+    return True
 
 render_grid(grid)
-
-while check_end_game(grid):
+counter = 0
+while not check_end_game(grid):
     x,y = shoot_on_board(grid)
     if grid[y][x] == schiff:
         grid[y][x] = schiff_getroffen
     if grid[y][x] == wasser:
         grid[y][x] = wasser_getroffen
-    # Clear cmd
-    print("\033[H\033[J", end="")
+    counter += 1
     render_grid(grid)
-    input()
+    print()
+
+print(counter)
